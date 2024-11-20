@@ -15,6 +15,8 @@
 using namespace std;
 using namespace Alibabacloud_OpenApiUtil;
 
+boost::any _parseToMap(const boost::any &input);
+
 void Alibabacloud_OpenApiUtil::Client::convert(
     shared_ptr<Darabonba::Model> body, shared_ptr<Darabonba::Model> content) {
   map<string, boost::any> props;
